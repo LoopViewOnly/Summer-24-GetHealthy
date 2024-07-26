@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetHealthy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!--
+// v0 by Vercel.
+// https://v0.dev/t/aOKjXwvzTkJ
+-->
+
+<div class="flex flex-col min-h-dvh">
+    <header class="px-4 lg:px-6 h-14 flex items-center bg-background">
+      <a class="flex items-center justify-center" href="#">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="size-6 text-primary"
+        >
+          <path d="M12 3V2"></path>
+          <path d="M5 10a7.1 7.1 0 0 1 14 0"></path>
+          <path d="M4 10h16"></path>
+          <path d="M2 14h12a2 2 0 1 1 0 4h-2"></path>
+          <path d="m15.4 17.4 3.2-2.8a2 2 0 0 1 2.8 2.9l-3.6 3.3c-.7.8-1.7 1.2-2.8 1.2h-4c-1.1 0-2.1-.4-2.8-1.2L5 18"></path>
+          <path d="M5 14v7H2"></path>
+        </svg>
+        <span class="sr-only">GetHealthy</span>
+      </a>
+      <nav class="ml-auto flex gap-4 sm:gap-6">
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+          Meal Plans
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+          A La Carte Meals
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+          About
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+          Testimonials
+        </a>
+        <a class="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground" href="#">
+          Contact
+        </a>
+      </nav>
+    </header>
+    <main class="flex-1">
+      <section class="w-full pt-12 md:pt-24 lg:pt-32 border-y bg-primary">
+        <div class="px-4 md:px-6 space-y-10 xl:space-y-16">
+          <div class="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+            <div>
+              <h1 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-primary-foreground">
+                Healthy Meals Delivered to Your Door
+              </h1>
+              <p class="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
+                Let us handle the meal prep so you can focus on living a healthy lifestyle. Choose from our delicious
+                and nutritious meal plans or order individual meals.
+              </p>
+              <div class="space-x-4 mt-6">
+                <a
+                  class="inline-flex h-9 items-center justify-center rounded-md bg-primary-foreground px-4 py-2 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  href="#"
+                >
+                  Order Now
+                </a>
+                <a
+                  class="inline-flex h-9 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                  href="#"
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2022/03/Sesame-salmon-purple-sprouting-broccoli-sweet-potato-mash-02-8062a36.jpg?quality=90&resize=556,505"
+                width="600"
+                height="400"
+                alt="Meal 1"
+                class="mx-auto aspect-[3/2] overflow-hidden rounded-t-xl object-cover"
+              />
+              <img
+                src="https://www.eatingwell.com/thmb/QYZnBgF72TIKI6-A--NyoPa6avY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/greek-salmon-bowl-f681500cbe054bb1adb607ff55094075.jpeg"
+                width="600"
+                height="400"
+                alt="Meal 2"
+                class="mx-auto aspect-[3/2] overflow-hidden rounded-t-xl object-cover"
+              />
+              <img
+                src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/prawn_fried_rice-2481925.jpg?quality=90&resize=440,400"
+                width="600"
+                height="400"
+                alt="Meal 3"
+                class="mx-auto aspect-[3/2] overflow-hidden rounded-t-xl object-cover"
+              />
+              <img
+                src="https://images.immediate.co.uk/production/volatile/sites/2/2020/02/OLI-0320_Healthy-CuminCrustedChickenBreastWithKaleSaladHumous_02786_preview-eba91c9.jpg"
+                width="600"
+                height="400"
+                alt="Meal 4"
+                class="mx-auto aspect-[3/2] overflow-hidden rounded-t-xl object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <div class="container space-y-12 px-4 md:px-6">
+          <div class="flex flex-col items-center justify-center space-y-4 text-center">
+            <div class="space-y-2">
+              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-primary">
+                Our Meal Plans and A La Carte Meals
+              </div>
+              <h2 class="text-3xl font-bold tracking-tighter sm:text-5xl text-primary">
+                Delicious and Nutritious Meals
+              </h2>
+              <p class="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Choose from our selection of healthy and convenient meal plans, tailored to your dietary needs and
+                preferences, or order individual meals.
+              </p>
+            </div>
+          </div>
+          <div class="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+            <div class="rounded-lg border shadow-sm bg-card text-card-foreground" data-v0-t="card">
+              <div class="flex flex-col space-y-1.5 p-6">
+                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                  Classic Meal Plan
+                </h3>
+                <p class="text-sm text-muted-foreground">A balanced selection of classic dishes.</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    3 meals per day
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Includes breakfast, lunch, and dinner
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Customizable to your dietary needs
+                  </li>
+                </ul>
+              </div>
+              <div class="flex items-center p-6">
+                <div class="text-2xl font-bold">$99/week</div>
+                <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+                  Order Now<span class="sr-only">Classic Meal Plan</span>
+                </button>
+              </div>
+            </div>
+            <div class="rounded-lg border shadow-sm bg-card text-card-foreground" data-v0-t="card">
+              <div class="flex flex-col space-y-1.5 p-6">
+                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">Keto Meal Plan</h3>
+                <p class="text-sm text-muted-foreground">Low-carb, high-fat meals to support ketosis.</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    2 meals per day
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Includes lunch and dinner
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Tailored to your macros
+                  </li>
+                </ul>
+              </div>
+              <div class="flex items-center p-6">
+                <div class="text-2xl font-bold">$89/week</div>
+                <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+                  Order Now<span class="sr-only">Keto Meal Plan</span>
+                </button>
+              </div>
+            </div>
+            <div class="rounded-lg border shadow-sm bg-card text-card-foreground" data-v0-t="card">
+              <div class="flex flex-col space-y-1.5 p-6">
+                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">
+                  High Protein Meal Plan
+                </h3>
+                <p class="text-sm text-muted-foreground">Meals packed with lean protein to support muscle growth.</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    3 meals per day
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Includes breakfast, lunch, and dinner
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    High in lean proteins and complex carbs
+                  </li>
+                </ul>
+              </div>
+              <div class="flex items-center p-6">
+                <div class="text-2xl font-bold">$109/week</div>
+                <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+                  Order Now<span class="sr-only">High Protein Meal Plan</span>
+                </button>
+              </div>
+            </div>
+            <div class="rounded-lg border shadow-sm bg-card text-card-foreground" data-v0-t="card">
+              <div class="flex flex-col space-y-1.5 p-6">
+                <h3 class="whitespace-nowrap text-2xl font-semibold leading-none tracking-tight">A La Carte Meals</h3>
+                <p class="text-sm text-muted-foreground">Order individual meals without a subscription.</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-2">
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Choose from a variety of healthy meals
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Order as many or as few meals as you need
+                  </li>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="mr-2 inline-block h-4 w-4 text-primary"
+                    >
+                      <path d="M20 6 9 17l-5-5"></path>
+                    </svg>
+                    Flexible and convenient
+                  </li>
+                </ul>
+              </div>
+              <div class="flex items-center p-6">
+                <div class="text-2xl font-bold">$12/meal</div>
+                <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2">
+                  Order Now<span class="sr-only">A La Carte Meals</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-muted">
+        <div class="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+          <div class="space-y-3">
+            <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight text-primary">What Our Customers Say</h2>
+            <p class="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Hear from real people who have experienced the convenience and quality of our meal prep services.
+            </p>
+          </div>
+          <div class="divide-y rounded-lg border">
+            <div class="grid w-full grid-cols-1 items-stretch justify-center divide-x md:grid-cols-3">
+              <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
+                <div class="space-y-2 text-center">
+                  <img
+                    src="/placeholder.svg"
+                    width="80"
+                    height="80"
+                    alt="Testimonial"
+                    class="mx-auto rounded-full"
+                    style="aspect-ratio:80/80;object-fit:cover"
+                  />
+                  <p class="text-sm font-medium">
+                    "The meals are delicious and so convenient. I've\n never felt better!"
+                  </p>
+                  <p class="text-sm text-muted-foreground">- Jane Doe, Busy Professional</p>
+                </div>
+              </div>
+              <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
+                <div class="space-y-2 text-center">
+                  <img
+                    src="/placeholder.svg"
+                    width="80"
+                    height="80"
+                    alt="Testimonial"
+                    class="mx-auto rounded-full"
+                    style="aspect-ratio:80/80;object-fit:cover"
+                  />
+                  <p class="text-sm font-medium">
+                    "I've tried other meal delivery services, but\n GetHealthy is by far the best."
+                  </p>
+                  <p class="text-sm text-muted-foreground">- John Smith, Fitness Enthusiast</p>
+                </div>
+              </div>
+              <div class="mx-auto flex w-full items-center justify-center p-4 sm:p-8">
+                <div class="space-y-2 text-center">
+                  <img
+                    src="/placeholder.svg"
+                    width="80"
+                    height="80"
+                    alt="Testimonial"
+                    class="mx-auto rounded-full"
+                    style="aspect-ratio:80/80;object-fit:cover"
+                  />
+                  <p class="text-sm font-medium">
+                    "I've never been so consistent with my healthy\n eating. GetHealthy has been a game-changer!"
+                  </p>
+                  <p class="text-sm text-muted-foreground">- Sarah Lee, Health-Conscious Mom</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="w-full py-12 md:py-24 lg:py-32 bg-background">
+        <div class="container px-4 md:px-6">
+          <div class="grid gap-10 px-10 md:gap-16 lg:grid-cols-2">
+            <div class="space-y-4">
+              <div class="inline-block rounded-lg bg-muted px-3 py-1 text-sm text-primary">Contact Us</div>
+              <h2 class="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-primary">
+                Have Questions? Let's Chat.
+              </h2>
+              <p class="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Fill out the form below and one of our
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
